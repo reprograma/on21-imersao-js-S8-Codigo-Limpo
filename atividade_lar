@@ -1,0 +1,9 @@
+Lição para Casa:
+
+Após entendermos a importancia do Clean Code, vamos criar uma função refatorada.
+
+Máquina de Bebida
+
+Crie uma função com algumas opções de bebidas (pode utilizar array ou objeto).
+Assim que a função for iniciada, um menu deve ser ofertado ao usuário com  a lista de bebidas disponíveis. Ao escolher uma, as principais características devem ser exibidas (Nome, Preço, Marca e Sabor).
+O Usuário deve ter a opção de voltar para o menu após a seleção de uma bebida.
