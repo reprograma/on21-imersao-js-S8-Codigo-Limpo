@@ -1,11 +1,7 @@
-const { resolveObjectURL } = require("buffer");
 const readline = require("readline");
-const interface = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+const interface = readline.createInterface(process.stdin, process.stdout);
 
-function maquinaDeBebida() {
+function iniciarMaquinaDeBebida() {
   const bebidas = [
     {
       nome: "Guaraná",
@@ -34,18 +30,24 @@ function maquinaDeBebida() {
   ];
 
   console.log("Iniciando Máquina de Bebidas...");
+
   const opcoesDisponiveis = listarOpcoes(bebidas);
 
   interfaceListarBebidas(opcoesDisponiveis, bebidas);
 }
 
+function encerrarMaquinaDeBebida() {
+  interface.close();
+  console.log("Máquina de bebidas encerrada.");
+}
+
 function interfaceListarBebidas(opcoesDisponiveis, array) {
   interface.question(`Escolha uma opção: \n${opcoesDisponiveis}`, (input) => {
     if (input == 0) {
-      return interface.close();
+      return encerrarMaquinaDeBebida();
     }
 
-    if (isNaN(input) || input > array.length) {
+    if (isNaN(input) || input > array.length || input.length === 0) {
       console.log("Opção inválida!");
       interfaceListarBebidas(opcoesDisponiveis, array);
     } else {
@@ -53,7 +55,7 @@ function interfaceListarBebidas(opcoesDisponiveis, array) {
       interface.question(`Digite S para retornar ao menu. `, (string) => {
         if (string.toUpperCase() == "S") {
           interfaceListarBebidas(opcoesDisponiveis, array);
-        } else return interface.close();
+        } else return encerrarMaquinaDeBebida();
       });
     }
   });
@@ -77,4 +79,4 @@ function getOpcaoDados(opcaoEscolhida, array) {
   return dados;
 }
 
-maquinaDeBebida();
+iniciarMaquinaDeBebida();
