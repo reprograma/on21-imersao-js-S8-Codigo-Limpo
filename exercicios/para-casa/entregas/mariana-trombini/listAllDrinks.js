@@ -5,6 +5,7 @@ const listAllDrinks = () => {
   console.table(drinksList.map(drink => `${drink.name}`))
   console.log("Press Enter to go back.");
   readline.question();
+  console.clear()
 }
 
 module.exports = {
