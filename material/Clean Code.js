@@ -106,30 +106,26 @@ Todos os cheiros neste grupo contribuem para o acoplamento excessivo entre class
 
 
 */
-function calcular(){
-let z = 2022;
-let x = 1996;
+function calcular() {
+  let z = 2022;
+  let x = 1996;
 
-let u = z - x;
-console.log(u);
+  let u = z - x;
+  console.log(u);
 }
 
-function media(){
-let um = 8;
-let dois = 10;
+function media() {
+  let um = 8;
+  let dois = 10;
 
-let media = um + dois % 2;
+  let media = um + (dois % 2);
 
-console.log(media);
-
+  console.log(media);
 }
 
 function contar() {
-
-    let cont = 1
-    while (cont <= 10) {
-    console.log(cont++)
-        
-    }
-   
+  let cont = 1;
+  while (cont <= 10) {
+    console.log(cont++);
+  }
 }
