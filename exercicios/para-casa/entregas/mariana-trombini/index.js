@@ -1,6 +1,6 @@
 const readline = require("readline-sync");
 const { listAllDrinks } = require('./listAllDrinks.js')
-const { listDrinkByIndex } = require('./listDrinkByIndex.js')
+const { listDrinkById } = require('./listDrinkById.js')
 
 const drinksMenu = () => {
   console.log(`+------------+ Drink Machine Menu +------------+
@@ -20,7 +20,7 @@ const drinksMenu = () => {
       break;
 
     case "2":
-      listDrinkByIndex();
+      listDrinkById();
       drinksMenu();
       break;
 
