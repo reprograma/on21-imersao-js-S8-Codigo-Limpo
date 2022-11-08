@@ -56,9 +56,9 @@ function pegarBebida(id) {
     );
 }
 function deletarBebida(nome) {
-    let resul = Bebidas.listaDeBebidas.filter(item => { return item.Nome != nome });
+    let novoArr = Bebidas.listaDeBebidas.filter(item => { return item.Nome != nome });
     Bebidas.listaDeBebidas = [];
-    for (let item of resul) {
+    for (let item of novoArr) {
         Bebidas.listaDeBebidas.push({ "Nome": item.Nome, "Preco": item.Preco, "Marca": item.Marca, "Sabor": item.Sabor });
     }
     console.log("Bebida deletada!");
