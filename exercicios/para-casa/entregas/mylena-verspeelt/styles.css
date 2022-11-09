@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+body {
+    background-color: rgb(233, 233, 233);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    display: flex;
+    margin: 40px auto 20px;
+    justify-content: space-around;
+    color: rgb(128, 0, 128);
+}
+
+h2 {
+    padding: 20px;
+    font-size: 20px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    max-width: 40%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 165, 0);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* CLASS SELECTORS */
+
+.opcoesMaquina {
+    margin: 50px auto;
+    max-width: fit-content; 
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px 5px rgba(42, 41, 41, 0.219);
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.opcoesInput {
+    margin: 10px;
+}
+
+.resultado {
+    display: flex;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    max-width: fit-content; 
+    justify-content: space-around;
+    box-shadow: 0 0 5px 5px rgba(42, 41, 41, 0.219);
+    border-radius: 7px;
+}

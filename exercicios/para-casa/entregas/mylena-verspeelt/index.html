@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Maquina de Bebidas</title>
+</head>
+<body>
+    <h1>Máquina de Bebidas</h1>
+    <section class="opcoesMaquina">
+        <h2>Selecione uma opção:</h2>
+        <form name="opcoes" class="form" method="post">
+            <div class="opcoesInput">
+                <input type="radio" value="aguaSemGas" name="opcoes" id="1">
+                <label>Água sem Gás </label>
+            </div>
+            <div class="opcoesInput">
+                <input type="radio" value="aguaComGas" name="opcoes" id="2">
+                <label>Água com Gás </label>
+            </div>
+            <div class="opcoesInput">
+                <input type="radio" value="refrigeranteCola" name="opcoes" id="3">
+                <label>Refrigerante Cola </label>
+            </div>
+            <div class="opcoesInput">
+                <input type="radio" value="refrigeranteLaranja" name="opcoes" id="4">
+                <label>Refrigerante Laranja </label>
+            </div>
+            <div class="opcoesInput">
+                <input type="radio" value="refrigeranteTutifrutti" name="opcoes" id="5">
+                <label>Refrigerante Tutti-frutti</label>
+            </div>
+            <div class="opcoesInput">
+                <input type="radio" value="refrigeranteLimao" name="opcoes" id="6">
+                <label>Refrigerante Limão</label>
+            </div>
+            <div class="opcoesInput">
+                <input type="radio" value="refrigeranteGuarana" name="opcoes" id="7">
+                <label>Refrigerante Guaraná </label>
+            </div>
+            <div class="opcoesInput">
+                <input type="radio" value="cerveja" name="opcoes" id="8">
+                <label>Cerveja</label>
+            </div>
+            <button onclick="verMais" id="botao">Ver mais:</button>
+        </form>
+    </section>
+
+    <section class="resultado">
+        <span id="resultado">
+        </span>
+    </section>
+    <script src="./resolucao.js"></script>
+</body>
+
+</html>
