@@ -65,10 +65,10 @@ let listaDeBebidas = [
 ]
 
 let resultado = document.getElementById('resultado')
-let button = document.getElementById('botao').addEventListener('click', verMais)
+let botao = document.getElementById('botao').addEventListener('click', verMais)
 
 function verificarOpcaoSelecionada(opcoes) {
-    let pegarValor = document.querySelector('input[name=' + opcoes + ']:checked');
+    let pegarValor = document.querySelector(`input[name='${opcoes}']:checked`);
     let valorDoInput = pegarValor.value
     return valorDoInput
 }
@@ -104,7 +104,6 @@ function listarOpcoes() {
         default:
     }
     return
-
 }
 
 function verMais(event, listaDeBebidas) {
