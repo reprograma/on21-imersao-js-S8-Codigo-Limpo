@@ -106,13 +106,13 @@ Todos os cheiros neste grupo contribuem para o acoplamento excessivo entre class
 
 
 */
-function calcular(){
-let z = 2022;
-let x = 1996;
+function calcularIdade(anoAtual, anoNascimento ){
+ 
+ anoAtual = 2022;
+ anoNascimento = 1996;
 
-let u = z - x;
-console.log(u);
-}
+return anoAtual - anoNascimento;
+};
 
 function media(){
 let um = 8;
@@ -122,7 +122,7 @@ let media = um + dois % 2;
 
 console.log(media);
 
-}
+};
 
 function contar() {
 
@@ -132,4 +132,5 @@ function contar() {
         
     }
    
-}
+};
+
