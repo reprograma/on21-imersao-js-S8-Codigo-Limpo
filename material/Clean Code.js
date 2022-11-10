@@ -114,6 +114,13 @@ let u = z - x;
 console.log(u);
 }
 
+function calcularIdade(anoAtual, anoNascimento){
+    let anoAtual = 2022;
+    let anoNascimento = 1991;
+
+    return anoAtual - anoNascimento;
+}
+
 function media(){
 let um = 8;
 let dois = 10;
@@ -124,6 +131,11 @@ console.log(media);
 
 }
 
+function calcularMediaNotas(nota1, nota2){
+    let media = (nota1 + nota2) / 2;
+    return media;
+}
+
 function contar() {
 
     let cont = 1
@@ -132,4 +144,11 @@ function contar() {
         
     }
    
+}
+
+function contarAte10(){
+    let contador = 1;
+    while (contador <= 10){
+        console.log(contador ++);
+    }
 }
