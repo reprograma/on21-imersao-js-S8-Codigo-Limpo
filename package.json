@@ -1,0 +1,24 @@
+{
+  "name": "on21-imersao-js-s8-codigo-limpo",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">\r   <img src=\"assets/reprograma-fundos-claros.png\" alt=\"logo reprograma\" width=\"500\">\r </h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElianeA/on21-imersao-js-S8-Codigo-Limpo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElianeA/on21-imersao-js-S8-Codigo-Limpo/issues"
+  },
+  "homepage": "https://github.com/ElianeA/on21-imersao-js-S8-Codigo-Limpo#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0",
+    "prompt-sync-history": "^1.0.1"
+  }
+}
