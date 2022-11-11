@@ -38,8 +38,7 @@ class Bebida {
 
     getDescricao() {
         let descricaoSabor = this.sabor !== undefined ? 'Sabor: ' + this.sabor : ''
-        return `Código: ${this.#id}\nDescrição: ${this.nome}
-        Tipo: ${this.tipo}\nPreço: R$${this.preco}\nMarca: ${this.marca}\n${descricaoSabor}`;
+        return `Código: ${this.#id}\nDescrição: ${this.nome}\nTipo: ${this.tipo}\nPreço: R$${this.preco}\nMarca: ${this.marca}\n${descricaoSabor}`;
     }
 
     get id() {
