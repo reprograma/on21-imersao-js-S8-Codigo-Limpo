@@ -76,3 +76,6 @@ Atestam o óbvio;
 São redundantes;
 Dão avisos para outros programadores.
 */
+// nao use ---  let auxiliar = [];use:pois nao e uma boa pratica usar uma variavel com valor vazio
+let auxiliar;
+Array(auxiliar);
