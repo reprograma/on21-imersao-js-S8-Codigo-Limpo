@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/ElianeA/on21-imersao-js-S8-Codigo-Limpo#readme",
   "dependencies": {
-    "prompt-sync": "^4.2.0",
-    "prompt-sync-history": "^1.0.1"
+    "prompt-sync": "^4.2.0"
   }
 }
