@@ -4,20 +4,21 @@ Conceito
 Clean Code é uma filosofia de desenvolvimento cuja o principal objetivo é aplicar técnicas simples que visam facilitar a escrita e leitura de um código, tornando-o de fácil compreensão e revelando a sua real intenção. Código limpo é reconhecer que seu público não é apenas um computador, são humanos reais!
 
 Motivação
-Fundamental A implementação de princípios de código limpo é uma habilidade fundamental que vale a pena especialmente quando é hora de refatorar o código ou testar o código.
+Fundamental: 
+ A implementação de princípios de código limpo é uma habilidade fundamental que vale a pena especialmente quando é hora de refatorar o código ou testar o código.
 
-Ler é difícil Ao se deparar com um código pronto, é tentador reescrever em vez de fazer o trabalho duro de ler e compreender o que foi feito. Se você escrever código que mal consegue seguir enquanto o escreve, descobrirá que não conseguirá compreender tudo mais tarde.
+Ler é difícil -  Ao se deparar com um código pronto, é tentador reescrever em vez de fazer o trabalho duro de ler e compreender o que foi feito. Se você escrever código que mal consegue seguir enquanto o escreve, descobrirá que não conseguirá compreender tudo mais tarde.
 
-Dívida técnica é deprimente Escrever código desleixado ou confuso cria dívidas técnicas. Você provavelmente obterá mais satisfação no trabalho com a qualidade do seu trabalho do que com a quantidade. A história mostrou que é improvável que você encontre tempo para refatorar seu código mais tarde, então faça certo da primeira vez.
+Dívida técnica é deprimente. Escrever código desleixado ou confuso cria dívidas técnicas. Você provavelmente obterá mais satisfação no trabalho com a qualidade do seu trabalho do que com a quantidade. A história mostrou que é improvável que você encontre tempo para refatorar seu código mais tarde, então faça certo da primeira vez.
 
 Benefícios
-Melhor uso do seu tempo O primeiro beneficiário do código limpo é o próprio programador. É fácil esquecer as coisas que você fez, linhas de código limpas facilitam as alterações.
+Melhor uso do seu tempo:  O primeiro beneficiário do código limpo é o próprio programador. É fácil esquecer as coisas que você fez, linhas de código limpas facilitam as alterações.
 
-Integração mais fácil para novos membros da equipe O uso de princípios de código limpo ajuda a integrar um novo programador. Não há necessidade de documentação para entender o código; o novo programador pode aprender diretamente nele.
+Integração mais fácil para novos membros da equipe :  O uso de princípios de código limpo ajuda a integrar um novo programador. Não há necessidade de documentação para entender o código; o novo programador pode aprender diretamente nele.
 
-Depuração mais fácil Quer você escreva código sujo ou limpo, os bugs são inevitáveis. Mas o código limpo o ajudará a depurar mais rapidamente, independentemente de quanta experiência ou conhecimento você tenha.
+Depuração mais fácil:  Quer você escreva código sujo ou limpo, os bugs são inevitáveis. Mas o código limpo o ajudará a depurar mais rapidamente, independentemente de quanta experiência ou conhecimento você tenha.
 
-Manutenção mais eficiente À medida que qualquer projeto cresce, ele precisará de novos recursos ou alterações nos recursos existentes. O código limpo torna a manutenção relativamente rápida e fácil.
+Manutenção mais eficiente:  À medida que qualquer projeto cresce, ele precisará de novos recursos ou alterações nos recursos existentes. O código limpo torna a manutenção relativamente rápida e fácil.
 
 Regra do Escoteiro
 Essa é o passo número 8 do livro "97 Things Every Programmer Should Know" de Kevlin Henney. A "regra do escoteiro" foi pensada por Robert C. Martin (grande referência em qualidade de software) a partir de uma regra existente para os escoteiros: "Sempre deixe o acampamento mais limpo do que o encontrou". Quando você encontrar uma bagunça no chão, limpe-a, não importa quem fez isso. Seu trabalho é sempre deixar o chão mais limpo para os próximos campistas. Aplicando esse princípio a programação teríamos algo como: "Sempre deixe o código em que você está trabalhando melhor do que encontrou". Se todos os desenvolvedores envolvidos em um projeto seguissem essa abordagem, o sistema melhoraria gradualmente. A limpeza é aproximar-se da melhoria e não da perfeição a cada passo.
@@ -112,6 +113,24 @@ let x = 1996;
 
 let u = z - x;
 console.log(u);
+}
+
+// calculo com variável
+function calcularIdade(){
+
+    let anoAtual = 2022;
+    let anoNascimento = 1984;
+
+    console.log(anoAtual - anoNascimento);
+}
+
+// calculo com parâmetros 
+function calcularIdade(anoAtual, anoNascimento){
+
+    anoAtual = 2022;
+    anoNascimento = 1984;
+
+    return (anoAtual - anoNascimento);
 }
 
 function media(){
