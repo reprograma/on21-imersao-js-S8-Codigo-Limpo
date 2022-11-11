@@ -1,0 +1,35 @@
+ [
+    {
+      "id": 1,
+      "name": "Fanta laranja",
+      "price": 7,
+      "brand": "Fanta",
+      "flavor": "Laranja"
+    },
+    {
+     "id": 2,
+      "name": "Coca cola",
+      "price": 9,
+      "brand": "Coca cola",
+      "flavor": "Coca cola"
+    },
+    {
+     "id": 3,
+      "name": "Guaraná",
+      "price": 7,
+      "brand": "Antarctica",
+      "flavor": "Laranja"
+    },
+    {
+     "id": 4,
+      "name": "Cajuína",
+      "price": 9,
+      "brand": "São Geraldo",
+      "flavor": "Caju"
+    }
+  ]
+
+
+
+
+
