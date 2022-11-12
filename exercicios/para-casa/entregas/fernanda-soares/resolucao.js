@@ -63,11 +63,12 @@ function interfaceListarBebidas(opcoesDisponiveis, array) {
 
 function listarOpcoes(array) {
   let listaOpcoes = "";
-  for (i = 0; i <= array.length; i++) {
-    if (i < array.length) {
-      listaOpcoes += `(${i + 1}) ${array[i].nome} \n`;
-    } else listaOpcoes += `(0) Sair \n`;
-  }
+
+  array.forEach((item, index) => {
+    listaOpcoes += `(${index + 1}) ${item.nome} \n`;
+  });
+
+  listaOpcoes += `(0) Sair \n`;
 
   return listaOpcoes;
 }
