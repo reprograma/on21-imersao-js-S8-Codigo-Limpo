@@ -43,21 +43,27 @@ function encerrarMaquinaDeBebida() {
 
 function interfaceListarBebidas(opcoesDisponiveis, array) {
   interface.question(`Escolha uma opção: \n${opcoesDisponiveis}`, (input) => {
-    if (input == 0) {
+    const opcao = Number(input);
+
+    if (opcao === 0) {
       return encerrarMaquinaDeBebida();
     }
 
-    if (isNaN(input) || input > array.length || input.length === 0) {
+    if (isNaN(opcao) || opcao > array.length) {
       console.log("Opção inválida!");
       interfaceListarBebidas(opcoesDisponiveis, array);
     } else {
-      console.log(getOpcaoDados(input, array));
-      interface.question(`Digite S para retornar ao menu. `, (string) => {
-        if (string.toUpperCase() == "S") {
-          interfaceListarBebidas(opcoesDisponiveis, array);
-        } else return encerrarMaquinaDeBebida();
-      });
+      console.log(getOpcaoDados(opcao, array));
+      interfaceRetornarAoMenu(opcoesDisponiveis, array);
     }
+  });
+}
+
+function interfaceRetornarAoMenu(opcoesDisponiveis, array) {
+  interface.question(`Digite S para retornar ao menu. `, (input) => {
+    if (input.toUpperCase() == "S") {
+      interfaceListarBebidas(opcoesDisponiveis, array);
+    } else return encerrarMaquinaDeBebida();
   });
 }
 
