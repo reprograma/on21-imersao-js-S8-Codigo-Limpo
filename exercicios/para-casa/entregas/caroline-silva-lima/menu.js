@@ -1,17 +1,21 @@
 const machineItems = require('./machineItems');
-
 const readline = require('readline-sync');
 
-const menu =  machineItems.map(machineItems=> console.log(machineItems.name , machineItems.price));
+const menu =  machineItems.map(machineItems=> (`${machineItems.name} , price ${machineItems.price} ,`));
+const entrance = readline.question('How about a drink? yes / no ');
+const drinkChoice = readline.question ('❤️ Enter the name of the drink you want ❤️');
 
-const entrance = readline.question('How about a drink? yes/no');
 
-if (entrance.toLocaleUpperCase()==='yes'){
-  console.log(menu); 
-  const drinkChoice = readline.question ('enter the name of the drink you want')
-  const answer = machineItems.filter(machineItems => machineItems.name === entrance);
-  console.table(answer);
+if (entrance === 'yes'){
+  console.table(menu); 
+  const drinkChoice = readline.question ('❤️ Enter the name of the drink you want ❤️');
+  const answer = machineItems.find(machineItems => machineItems.name === drinkChoice);
+  console.log(answer);
 }
 else{
-    console.log(`Esses são todos os livros disponíveis : ${ menu }}`);
-}
+  console.table(`These are the drinks available: ${ menu }}`);
+};
+
+const final = console.log(`Retire sua bebida`);
+
+export default drinkChoice; 

@@ -1,5 +1,3 @@
-const Item = require('./Item');
-
 const machineItems = [
    {
        'name':'coca-cola',
@@ -39,11 +37,5 @@ const machineItems = [
     },
 ];
 
-function itemSearch (drinkName, value) {
-    let menuItem = machineItems.find(machineItems => machineItems.name === drinkName);
-    console.log(menuItem);
-    menuItem.amount = menuItem.amount += value;
-    return 'drinks added successfully'
-};
 
 module.exports = machineItems;
