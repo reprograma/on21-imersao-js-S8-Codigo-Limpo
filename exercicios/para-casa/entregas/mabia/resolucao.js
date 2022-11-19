@@ -1,4 +1,5 @@
 const prompt = require("prompt-sync")();
+
 let opcao = prompt(
   "Digite uma opção de bebida: \n 1- café \n 2 - refrigerante \n 3- suco \n 4 - agua \n 5 - cerveja \n 0 - sair"
 );
