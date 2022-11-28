@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Refrigerante",
+    "price": 8.79,
+    "brand": "Coca-Cola",
+    "taste": "Cola"
+  },
+  {
+    "id": 2,
+    "name": "Suco",
+    "price": 5.59,
+    "brand": "Dell Valle",
+    "taste": "Laranja"
+  },
+  {
+    "id": 3,
+    "name": "Água",
+    "price": 3.25,
+    "brand": "Minalba",
+    "taste": "Água com Gás"
+  }
+]
