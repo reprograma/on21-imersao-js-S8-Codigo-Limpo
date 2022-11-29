@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Água",
+    "price": 2.8,
+    "brand": "Natural",
+    "taste": "Água sem gás"
+  },
+  {
+    "id": 2,
+    "name": "Suco",
+    "price": 4.99,
+    "brand": "Naturalis",
+    "taste": "Suco de uva"
+  },
+  {
+    "id": 3,
+    "name": "Refrigerante",
+    "price": 5.4,
+    "brand": "Coca-cola",
+    "taste": "Coca-cola"
+  }
+]
